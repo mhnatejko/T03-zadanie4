@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>T3:Z4 - Video</title>
+        <link rel="stylesheet" href="style-zmiany.css">
+    </head>
+    
+        <div id="player" class="player">
+
+            <video class="player__video">
+                <source src="0510_jellyfishclose_540p.mp4.mp4"/>
+                <source src="0510_jellyfishclose_540p.webmhd.webm" type="video/webm" />
+            </video>
+
+            <div class="player__controls">
+                <span class="player__play"></span>
+                <span class="player__time">
+                    <span class="player__time-current">0:00</span>
+                    /
+                    <span class="player__time-total">0:00</span>
+                </span>
+                <span class="player__timeline">
+                    <input type="range" min="0" max="100" step="1" value="0">
+                </span>
+                <span class="player__volume" title="Volume">
+                    <input type="range" min="0" max="100" step="1" value="100">
+                </span>
+            </div>
+
+        </div>
+    
+    <script src="script.js"></script>
+</html>
